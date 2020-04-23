@@ -74,10 +74,11 @@ class RoundedView @JvmOverloads constructor(
     private var shadowRadius = 0f
     private var shadowDx = 0f
     private var shadowDy = 0f
-    private var shadowColor = 0
+    var shadowColor = 0
         set(value) {
             field = value
             bgPaint.setShadowLayer(shadowRadius, shadowDx, shadowDy, shadowColor)
+            invalidate()
         }
 
     // gradient

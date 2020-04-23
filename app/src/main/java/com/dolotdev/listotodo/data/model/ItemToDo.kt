@@ -10,5 +10,5 @@ data class ItemToDo(
     val name: String,
     val creationDate: Long,
     val clickCounter: Int = 0,
-    val color: Int? = null
+    val color: Int = 0
 )

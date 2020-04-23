@@ -13,4 +13,12 @@
         <item>#1A1A1A</item>
         <item>#000000</item>
     </array>
+
+    <array name="itemBgColors">
+        <item>#5E35B1</item>
+        <item>#039BE5</item>
+        <item>#7CB342</item>
+        <item>#FFB300</item>
+        <item>#E53935</item>
+    </array>
 </resources>

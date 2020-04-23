@@ -1,18 +1,20 @@
 package com.dolotdev.listotodo.di
 
+import com.dolotdev.listotodo.di.module.AppModule
 import com.dolotdev.listotodo.di.module.DbModule
-import com.dolotdev.listotodo.presentation.page.details.DetailsViewModel
-import com.dolotdev.listotodo.presentation.page.list.ListToDoViewModel
+import com.dolotdev.listotodo.presentation.page.details.DetailsPageViewModel
+import com.dolotdev.listotodo.presentation.page.list.ListToDoPageViewModel
 import dagger.Component
 import javax.inject.Singleton
 
 @Singleton
 @Component(
     modules = [
-        DbModule::class
+        DbModule::class,
+        AppModule::class
     ]
 )
 interface AppComponent {
-    fun inject(into: ListToDoViewModel)
-    fun inject(into: DetailsViewModel)
+    fun inject(into: ListToDoPageViewModel)
+    fun inject(into: DetailsPageViewModel)
 }
