@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="gradientColors">
+        <item>#ffffff</item>
+        <item>#E6E6E6</item>
+        <item>#CCCCCC</item>
+        <item>#BBBBBB</item>
+        <item>#A1A1A1</item>
+        <item>#878787</item>
+        <item>#6D6D6D</item>
+        <item>#535353</item>
+        <item>#393939</item>
+        <item>#1A1A1A</item>
+        <item>#000000</item>
+    </array>
+</resources>

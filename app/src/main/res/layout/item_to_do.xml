@@ -1,6 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/xsmall_padding">
+
+    <com.dolotdev.listotodo.presentation.customView.RoundedView
+        android:id="@+id/viewBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:backgroundColor="@color/colorAccent"
+        android:padding="@dimen/small_padding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:radius="@dimen/corner_radius"
+        app:roundedCorners="all" />
+
+    <TextView
+        android:id="@+id/idLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/xsmall_padding"
+        android:fontFamily="@font/quicksand_medium"
+        android:includeFontPadding="false"
+        android:text="@string/item_id"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/name"
+        app:layout_constraintEnd_toStartOf="@id/itemId"
+        app:layout_constraintTop_toTopOf="@id/name" />
+
+    <TextView
+        android:id="@+id/itemId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/normal_padding"
+        android:fontFamily="@font/quicksand_regular"
+        android:includeFontPadding="false"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/name"
+        tools:text="1" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/normal_padding"
+        android:layout_marginTop="@dimen/normal_padding"
+        android:layout_marginEnd="@dimen/xsmall_padding"
+        android:fontFamily="@font/quicksand_semi_bold"
+        android:includeFontPadding="false"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/idLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="ItemToDo" />
+
+    <TextView
+        android:id="@+id/creationDateLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/normal_padding"
+        android:layout_marginEnd="@dimen/xsmall_padding"
+        android:fontFamily="@font/quicksand_medium"
+        android:includeFontPadding="false"
+        android:text="@string/creation_date"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@id/clickCounterLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name" />
+
+    <TextView
+        android:id="@+id/creationDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/small_padding"
+        android:layout_marginBottom="@dimen/normal_padding"
+        android:fontFamily="@font/quicksand_regular"
+        android:includeFontPadding="false"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/creationDateLabel"
+        app:layout_constraintStart_toStartOf="@id/creationDateLabel"
+        app:layout_constraintTop_toBottomOf="@id/creationDateLabel"
+        tools:text="23.04.2020 13:12" />
+
+    <TextView
+        android:id="@+id/clickCounterLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/xsmall_padding"
+        android:layout_marginEnd="@dimen/normal_padding"
+        android:fontFamily="@font/quicksand_medium"
+        android:includeFontPadding="false"
+        android:text="@string/click_counter"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/creationDateLabel"
+        app:layout_constraintTop_toBottomOf="@id/name" />
+
+    <TextView
+        android:id="@+id/clickCounter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/small_padding"
+        android:layout_marginBottom="@dimen/normal_padding"
+        android:fontFamily="@font/quicksand_regular"
+        android:includeFontPadding="false"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/clickCounterLabel"
+        app:layout_constraintStart_toStartOf="@id/clickCounterLabel"
+        app:layout_constraintTop_toBottomOf="@id/clickCounterLabel"
+        tools:text="0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
