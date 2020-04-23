@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ListoToDo</string>
+    <string name="click_counter">Liczba otworzeń</string>
+    <string name="creation_date">Data utworzenia</string>
+    <string name="item_id">ID:</string>
+    <string name="delete">USUŃ</string>
+    <string name="elapsedTime">Upłynięty czas od utworzenia:</string>
 </resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <attr name="backgroundColor" format="color" />
+    <attr name="strokeColor" format="color" tools:ignore="PrivateResource" />
+    <attr name="strokeWidth" format="dimension" tools:ignore="PrivateResource" />
+    <attr name="radius" format="dimension" />
+    <attr name="shadowRadius" format="dimension" />
+    <attr name="shadowDx" format="dimension" />
+    <attr name="shadowDy" format="dimension" />
+    <attr name="shadowColor" format="color" />
+    <attr name="roundedCorners" format="flags">
+        <flag name="topLeft" value="1" />
+        <flag name="topRight" value="2" />
+        <flag name="bottomRight" value="4" />
+        <flag name="bottomLeft" value="8" />
+        <flag name="all" value="15" />
+    </attr>
+    <attr name="gradientColors" format="reference" />
+
+    <declare-styleable name="RoundedView">
+        <attr name="backgroundColor" />
+        <attr name="strokeColor" />
+        <attr name="strokeWidth" />
+        <attr name="gradientEnabled" format="boolean" />
+        <attr name="gradientColors" />
+        <attr name="gradientAngle" format="integer" />
+        <attr name="radius" />
+        <attr name="minRadius" format="dimension" />
+        <attr name="shadowRadius" />
+        <attr name="shadowDx" />
+        <attr name="shadowDy" />
+        <attr name="shadowColor" />
+        <attr name="roundedCorners"/>
+        <attr name="border" format="flags">
+            <flag name="left" value="1" />
+            <flag name="top" value="2" />
+            <flag name="right" value="4" />
+            <flag name="bottom" value="8" />
+            <flag name="all" value="15" />
+        </attr>
+    </declare-styleable>
+
+</resources>
