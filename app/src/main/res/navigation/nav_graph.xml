@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listToDo">
+
+    <fragment
+        android:id="@+id/listToDo"
+        android:name="com.dolotdev.listotodo.presentation.page.list.ListToDo"
+        android:label="ListToDo" >
+        <action
+            android:id="@+id/toDetailsPage"
+            app:destination="@id/details" />
+    </fragment>
+    <fragment
+        android:id="@+id/details"
+        android:name="com.dolotdev.listotodo.presentation.page.details.Details"
+        android:label="Details" >
+        <argument
+            android:name="id"
+            app:argType="long" />
+    </fragment>
+</navigation>
